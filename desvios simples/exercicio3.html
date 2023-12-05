@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercicio 3</title>
+</head>
+<body>
+</body>
+<script language="javascript">
+	var num1 = prompt("Digite o primeiro numero: ");
+	var num2 = prompt("Digite o segundo numero: ");
+
+	soma = parseFloat(num1) + parseFloat(num2);
+
+	if(soma <= 20){
+		soma = soma -5;
+		document.write(`A soma foi menor ou igual a 20. <br> O resultado - 5 é igual a ${soma}.`);
+	}else{
+		soma = soma + 8;
+		document.write(`A soma foi maior que 20. <br> O resultado + 8 é igual a ${soma}.`);
+	}
+	
+</script>
+</html>

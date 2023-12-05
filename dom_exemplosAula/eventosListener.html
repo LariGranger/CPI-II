@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Diversos Eventos</title>
+		<style type="text/css">
+			body {
+				background-color: salmon;
+			}
+			img {
+				border: 0;
+				width: 70;
+				height: 70;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Diversos Eventos</h1>
+		<h2>Adicionando escutadores de eventos com JavaScript</h2>
+		<a href="javascript:nada()" id="kit1">
+            <img src="../Códigos de exemplo/hello1.jpg"/>
+	  	</a>
+		<a href="javascript:nada()" id="kit2">
+			<img src="../Códigos de exemplo/hello2.png"/>
+		</a>
+		<a href="javascript:nada()" id="kit3">
+			<img src="../Códigos de exemplo/hello3.gif"/>
+		</a>
+		<form name=saida>
+			<input type=text name=texto>
+		</form>
+	</body>
+	<script language="javascript">
+
+        /*const link1 = document.getElementById("kit1");
+        link1.addEventListener("click", clica);
+        link1.addEventListener("mouseout", sai);
+        link1.addEventListener("mouseover", entrei("kit1"));
+
+        const link2 = document.getElementById("kit2");
+        link2.addEventListener("click", clica);
+        link2.addEventListener("mouseout", sai);
+        link2.addEventListener("mouseover", entrei("kit2"));
+
+        const link3 = document.getElementById("kit3");
+        link3.addEventListener("click", clica);
+        link3.addEventListener("mouseout", sai);
+        link3.addEventListener("mouseover", entrei("kit3"));*/
+
+        const links = document.querySelectorAll("a");
+        for(i=0;i<links.length;i++){
+            links[i].addEventListener("click", clica);
+            links[i].addEventListener("mouseout", sai);
+            links[i].addEventListener("mouseover", entrei(links[i].id));
+        }
+
+
+			
+        
+        function entrei(nome){
+				document.saida.texto.value = nome;
+			}
+			function sai(){
+				document.saida.texto.value = " saiu ";
+			}
+			function nada(){
+			}
+			function clica(){
+				document.saida.texto.value = " clicou ";
+			}
+	</script>
+</html>

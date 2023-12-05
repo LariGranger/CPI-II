@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+ 
+    var vetorA = new Array(10);
+    vetorA[0] = prompt("Digite o primeiro valor: ");
+    vetorA[1] = prompt("Digite o segundo valor: ");
+    vetorA[2] = prompt("Digite o terceiro valor: ");
+    vetorA[3] = prompt("Digite o quarto valor: ");
+    vetorA[4] = prompt("Digite o quinto valor: ");
+    vetorA[5] = prompt("Digite o sexto valor: ");
+    vetorA[6] = prompt("Digite o sétimo valor: ");
+    vetorA[7] = prompt("Digite o oitavo valor: ");
+    vetorA[8] = prompt("Digite o nono valor: ");
+    vetorA[9] = prompt("Digite o décimo valor: ");
+    document.write("Vetor A: " + vetorA + "<br>");
+
+    var vetorB = new Array(10);
+    for(i=0; i<10;i++){
+        if(vetorA[i] % 2 == 0){
+            vetorB[i] = vetorA[i] * 5;
+        }else{
+            vetorB[i] = vetorA[i] + 5;
+        }
+    }
+    document.write("Vetor B: " + vetorB + "<br>");
+
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+
+var vetorA = new Array(5);  
+for(i=0;i<=4;i++){
+    vetorA[i] = parseInt(prompt("Digite o valor: "));
+}
+
+var vetorB = new Array(5);
+for(i=0;i<=4;i++){
+    vetorB[i] = parseInt(prompt("Digite o valor: "));
+}
+    
+for(i=0;i<vetorA.length;i++){
+        document.write(`vetorA[${i}]: ${vetorA[i]} <br>`);
+}
+
+document.write("<br>")
+
+for(i=0;i<vetorA.length;i++){
+        document.write(`vetorB[${i}]: ${vetorB[i]} <br>`);
+}
+
+document.write("<br>")
+
+
+document.write("<p>Junção dos vetores: " + vetorA.concat(vetorB) + "</p>");
+</script>
+</html>

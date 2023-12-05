@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    //Exemplo 4 - Comando return para retornar um valor da função
+    function quadrado(x){
+        return x*x;
+    }
+
+    var num = parseInt(prompt('Informe um número: '));
+    if(quadrado(num) > 100){//chamada da função numa condição
+        var quadrado = quadrado(num); //chamada da função numa atribuição
+        alert("Quadrado do número informado: " + quadrado);
+    } 
+</script>
+</html>

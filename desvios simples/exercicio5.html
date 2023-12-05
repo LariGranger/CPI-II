@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercicio 5</title>
+</head>
+<body>
+</body>
+<script language="javascript">
+	var salario = prompt("Digite seu salario: ");
+
+	if(salario <= 300){
+		salarioReaj = parseFloat(salario)  + (parseFloat(salario) * (15/100));
+		document.write(`O salário reajustado é de ${salarioReaj}`);
+	}else{
+		salarioReaj = parseFloat(salario)  + (parseFloat(salario) * (10/100));
+		document.write(`O salário reajustado é de ${salarioReaj}`);
+	}
+	
+</script>
+</html>

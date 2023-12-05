@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+
+    var altura = prompt("Digite sua altura:");
+    var sexo = prompt("Digite seu sexo: \nF - feminino\nM - masculino");
+
+ 
+
+    switch (sexo.toUpperCase()) {
+        case 'M':
+        imc = (72.7 * parseFloat(altura)) - 58;
+            document.write(`Peso Ideal: ${imc}`);
+            break;
+        case 'F':
+        imc = (62.1 * parseFloat(altura)) - 44.7;
+            document.write(`Peso Ideal: ${imc}`);
+            break;
+      
+        default:
+            document.write("Erro");
+            break;
+    }
+
+</script>
+</html>

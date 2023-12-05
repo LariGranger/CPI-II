@@ -1,0 +1,36 @@
+<!--calcular a taxa da entrega conforme area de residencia -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Taxa de Entrega</title>
+</head>
+<body>
+	<p>Exemplo 1 - taxa de entrega</p>
+</body>
+<script type="text/javascript">
+	var area = prompt("Área de entrega: ");
+	var areaConvertida = area.toLowerCase();
+	alert(`${areaConvertida}`)
+	var taxaEntrega = 0;
+
+
+	switch(area){
+	case "estrutural":
+		taxaEntrega = 5.00;
+		break;
+	case "taguatinga":
+	case "águas Claras":
+		taxaEntrega = 7.00;
+		break;
+	case "asa Norte":
+		taxaEntrega = 10.00;
+		break;
+	default: 
+		taxaEntrega = 8.00;
+	}
+	//toFixed() formata em casas decimais
+	alert(`Taxa de entrega: ${taxaEntrega.toFixed(2)}`);
+</script>
+</html>

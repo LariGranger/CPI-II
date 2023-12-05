@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+//Exemplo de criação de um objeto com a data do sistema
+var dataHoje = new Date();
+console.log(dataHoje);
+
+//Exemplo - criação de um objeto com uma data específica (até 7 parametros - ano - mês - dia - hora - minuto - segundo - milisegundo)   
+var niverNina = new Date(2008,4,30); //mês começa em 0 - representado de 0 a 11
+console.log(`${niverNina}`);
+
+//Objeto date não tem propriedades, somente métodos
+//Exemplo de métodos
+console.log(`Dia do nascimento: ${niverNina.getDate()}`);
+console.log(`Mês do nascimento: ${niverNina.getMonth()}`);
+console.log(`Ano do nascimento: ${niverNina.getFullYear()}`);
+console.log(`A nina nasceu no dia ${niverNina.toLocaleDateString()}`);
+</script>
+</html>

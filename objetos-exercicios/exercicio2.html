@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+
+//Fazer um programa que armazene números em dois vetores inteiros de cinco elementos cada, e que gere e imprima o vetor soma. Os elementos do vetor soma são o resultado da adição de cada elemento do vetor 1 pelo vetor 2 (soma[0] = A[0] + B[0], soma[1] = A[1] + B[1], ...)
+
+    var vetorA = new Array(5);
+    vetorA[0] = parseInt(prompt("Digite o primeiro valor: "));
+    vetorA[1] = parseInt(prompt("Digite o segundo valor: "));
+    vetorA[2] = parseInt(prompt("Digite o terceiro valor: "));
+    vetorA[3] = parseInt(prompt("Digite o quarto valor: "));
+    vetorA[4] = parseInt(prompt("Digite o quinto valor: "));
+
+    for(i=0;i<=4;i++){
+        document.write(`elemento do vetorA[${i}]: ${vetorA[i]} <br>`);
+    }
+
+    document.write("<br>")
+
+    var vetorB = new Array(5);
+    vetorB[0] = parseInt(prompt("Digite o primeiro valor: "));
+    vetorB[1] = parseInt(prompt("Digite o segundo valor: "));
+    vetorB[2] = parseInt(prompt("Digite o terceiro valor: "));
+    vetorB[3] = parseInt(prompt("Digite o quarto valor: "));
+    vetorB[4] = parseInt(prompt("Digite o quinto valor: "));
+
+    for(i=0;i<=4;i++){
+        document.write(`elemento do vetorB[${i}]: ${vetorB[i]} <br>`);
+    }
+
+    document.write("<br>")
+    document.write(`Vetor soma: <br>`)
+    for(i=0;i<=4;i++){
+        document.write(`soma[${i}]: ${vetorA[i] + vetorB[i]} <br>`);
+    }
+
+
+</script>
+</html>

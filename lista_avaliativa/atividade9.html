@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    var nomes = new Array(5);
+
+    for(var i = 0; i < nomes.length; i++) {
+        nomes[i] = prompt(`Digite o ${i+1}º nome:`);
+    }
+
+    var nome = prompt('Digite o numero do nome que deseja buscar:');
+
+    switch(nome) {
+        case '1':
+            document.write(`<p>${nomes[0]}</p>`);
+            break;
+        case '2':
+            document.write(`<p>${nomes[1]}</p>`);
+            break;
+        case '3':
+            document.write(`<p>${nomes[2]}</p>`);
+            break;
+        case '4':
+            document.write(`<p>${nomes[3]}</p>`);
+            break;
+        case '5':
+            document.write(`<p>${nomes[4]}</p>`);
+            break;
+        default:
+            document.write(`<p>Nome não encontrado</p>`);
+    }
+
+</script>
+</html>

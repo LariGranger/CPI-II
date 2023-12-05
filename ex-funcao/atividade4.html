@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+function calculaNota(n1,n2,n3){
+    return (n1 + n2 + n3) / 3;
+}
+
+n1 = parseFloat(prompt(`Digite a primeira nota: `));
+n2 = parseFloat(prompt(`Digite a segunda nota: `));
+n3 = parseFloat(prompt(`Digite a terceira nota: `));
+
+document.write(`A média das notas é: ${calculaNota(n1,n2,n3)}`);
+</script>
+</html>

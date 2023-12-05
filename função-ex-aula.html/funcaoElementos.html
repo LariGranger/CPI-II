@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Digite algo: </h1>
+    <input type="text" id="exemplo">
+    <button onclick="mostrarExemplo()">Ok</button>
+    <p id="paragrafo">Escreva algo no input e clique em Ok</p>
+</body>
+<script type="text/javascript">
+   function mostrarExemplo(){
+    var exemplo = document.getElementById('exemplo').value;
+    alert("Texto capturado do Input: " + exemplo);
+
+    //exemplo de escrita em elemento HTML
+    document.getElementById('paragrafo').innerHTML = "Texto capturado do input: " + exemplo;
+   }
+</script>
+</html>

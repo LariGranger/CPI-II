@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+	var salario = prompt("Informe o salário do funcionário: ");
+    salario = parseInt(salario);
+
+    var novo_Salario = 0;
+
+    if(salario < 500){
+        novo_Salario = salario + (salario * 1.15);
+    }else if(salario <=1000){
+        novo_Salario = salario + (salario * 1.10);
+    }else{
+        novo_Salario = salario + (salario * 1.05);
+    }
+
+    alert("O novo salário do funcionário é: " + novo_Salario);
+   
+</script>
+</html>

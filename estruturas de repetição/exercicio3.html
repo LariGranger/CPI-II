@@ -1,0 +1,28 @@
+<!--Utilizando a estrutura de repetição while:
+3) Faça um programa que leia números positivos e imprima a média dos números digitados.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body></body>
+<script type="text/javascript">
+    var numero = parseInt(prompt("Digite um número: "));   
+    var cont = 0; 
+    var contador = 0; 
+    var media;  
+
+    while(numero > 0){
+        
+        contador = contador + numero;
+        cont++;
+        var numero = parseInt(prompt("Digite um número: ")); 
+        
+    }
+    media = contador / cont; 
+     
+    alert(`A média dos números é ${media}`);
+</script>
+</html>

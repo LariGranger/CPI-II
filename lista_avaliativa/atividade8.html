@@ -1,0 +1,30 @@
+<!--Ler 10 números inteiros quaisquer e armazenar em um vetor. Imprimir uma listagem numerada contendo cada número do vetor (sem alterar a ordenação) e uma das mensagens: par ou ímpar, para cada um deles.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    var valores = new Array(10);
+    for(var i = 0; i < 10; i++) {
+        valores[i] = prompt(`Digite o ${i+1}º valor:`);
+    }
+
+    for(var i = 0; i < 10; i++) {
+        if(valores[i] % 2 == 0) {
+            document.write(`<p>${i+1}º valor: ${valores[i]} - Par</p>`);
+        } else {
+            document.write(`<p>${i+1}º valor: ${valores[i]} - Ímpar</p>`);
+        }
+    }
+    
+        
+
+    
+
+</script>
+</html>

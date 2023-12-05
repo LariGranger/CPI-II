@@ -1,0 +1,28 @@
+<!--Distribuição de ingressos, 2 para feminino, 1 para masculino-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ingressos</title>
+</head>
+<body>
+	<p>Exemplo 2 - ingressos</p>
+</body>
+<script type="text/javascript">
+	var sexo = prompt("Informe (F ou f) para sexo feminino ou (M ou m) para o sexo masculino: ");
+	switch(sexo){
+	case 'm':
+	case 'M':
+		alert("Essa pessoa deverá receber dois ingresso");
+		break;
+	case 'f':
+	case 'F':
+		alert("Essa pessoa deverá receber um ingresso");
+		break;
+	default:
+		alert("Dado informado inválido");
+	}
+</script>
+</html>

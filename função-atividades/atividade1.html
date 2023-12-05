@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Valor atualizado da prestação</h1>
+    <label for="valor_prestacao">Valor da prestação</label>
+    <input type="text" id="valor_prestacao">
+    <br>
+    <label for="tx_aplicada">Taxa Aplicada</label>
+    <input type="text" id="tx_aplicada">
+    <br>
+    <label for="dias_atraso">Dias em atraso</label>
+    <input type="text" id="dias_atraso">
+    <br>
+    <button onclick="calculaPrestacao()">Calcular</button>
+
+   
+    <p id="paragrafo">Digite os valores solicitados e clique em Ok</p>
+
+</body>
+<script type="text/javascript">
+   function calculaPrestacao(){
+
+    var valor_prestacao = parseInt(document.getElementById('valor_prestacao').value) ;
+
+    var tx_aplicada = parseInt(document.getElementById('tx_aplicada').value);
+
+    var dias_atraso = parseInt(document.getElementById('dias_atraso').value);
+
+    var novoValor = valor_prestacao + (valor_prestacao * (tx_aplicada/100) * dias_atraso);
+
+    document.getElementById('paragrafo').innerHTML = "O valor atualizado de sua prestação é: " + novoValor;
+   }
+</script>
+</html>

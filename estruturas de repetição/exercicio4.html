@@ -1,0 +1,29 @@
+<!--Utilizando a estrutura de repetição do...while:
+4) Faça um algoritmo, utilizando o laço do-while, que leia números e apresente sua soma e sua média. Admita que o valor 9999 é utilizado como sentinela/chave para fim de leitura.
+Exemplo: 1, 2, 3 => Soma=6 Media=2-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    var numero = parseInt(prompt("Digite um número: "));   
+    var cont = 0; 
+    var contador = 0; 
+    var media;  
+
+   do{
+        contador = contador + numero;
+        cont++;
+        var numero = parseInt(prompt("Digite um número: ")); 
+        
+    } while(numero != 9999)
+    media = contador / cont; 
+     
+    alert(`Média: ${media}. Soma: ${contador}`);
+</script>
+</html>

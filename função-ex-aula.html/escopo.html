@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escopo</title>
+</head>
+<body>
+    <button onclick="clicou()">Clique aqui!</button>
+    <p id="contador">Clique no botão</p>
+</body>
+<script type="text/javascript">
+    //Exemplo de escopo local e global
+    var contador = 0; //variavel global
+    function clicou(){
+        //var contador = 0; //variavel local
+        contador = contador + 1;
+        document.getElementById('contador').innerHTML = "clicou " + contador + " vez(es)";
+    }
+</script>
+</html>

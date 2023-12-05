@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return1</title>
+    <script>
+        function montaLista(){
+            document.write("<ul>");
+                while(true){
+                    num = prompt("Digite um número ou zero para interromper: ");
+                    if(parseInt(num) == 0){
+                        return;
+                    }
+                    document.write("<li>" + num + "</li>")
+                }
+                document.write("</ul>");
+        }
+        montaLista();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
